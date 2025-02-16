@@ -2,5 +2,7 @@
 # This script terminates the script 4-to_infinity_and_beyond without using kill or killall
 # shellcheck disable=SC2009
 
-pkill -f "7-highlander"
-echo "The script 7-highlander has been terminated"
+# Get the PID of the running script
+pid=$(pgrep -f "bash ./7-highlander") 
+kill -9 "$pid"
+echo "Process $pid terminated successfully."
