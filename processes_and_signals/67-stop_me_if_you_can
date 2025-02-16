@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script terminates the script 4-to_infinity_and_beyond without using kill or killall
+# shellcheck disable=SC2009
+
+pkill -f "7-highlander"
+echo "The script 7-highlander has been terminated"
