@@ -2,5 +2,5 @@
 # This script terminates the script 4-to_infinity_and_beyond
 
 id=$(pgrep -f 4-to_infinity_and_beyond)
-kill -9 "$id"
+pgrep -f 4-to_infinity_and_beyond | xargs kill
 echo "The script 4-to_infinity_and_beyond with id number $id has been terminated"
