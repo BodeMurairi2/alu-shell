@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script terminates the script 4-to_infinity_and_beyond
+
+# Get the PID of the script 4-to_infinity_and_beyond
+id=$(pgrep -f 4-to_infinity_and_beyond)
+
+# Terminate the process
+if [ -n "$id" ]; 
+then
+    kill "$id"
+    echo "Process $id terminated successfully"
+fi
