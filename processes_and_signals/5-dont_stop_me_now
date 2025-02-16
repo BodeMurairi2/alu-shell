@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # This script terminates the script 4-to_infinity_and_beyond
 
-kill -9 $(pgrep -f 4-to_infinity_and_beyond)
+id=$(pgrep -f 4-to_infinity_and_beyond)
+kill "$id"
 echo "The script 4-to_infinity_and_beyond has been terminated"
