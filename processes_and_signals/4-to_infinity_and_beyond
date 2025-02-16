@@ -5,4 +5,5 @@ counter=True
 while [ "$counter" = True ]; 
 do 
     echo "To infinity and beyond"
+    sleep 2
 done
