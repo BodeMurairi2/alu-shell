@@ -1,13 +1,3 @@
 #!/usr/bin/env bash
-# This script finds and terminates the "To infinity and beyond" script
-
-# Get the PID of the running script
-pid=$(pgrep -f "bash ./7-highlander") 
-
-# Check if the process exists, then send SIGTERM
-if [ -n "$pid" ]; then
-    kill -9 "$pid"
-    echo "Process $pid terminated successfully."
-else
-    echo "No matching process found."
-fi
+# This script kills the process 7-highlander
+kill -9 "$(pgrep -f highlander)"
